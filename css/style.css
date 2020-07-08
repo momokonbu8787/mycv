@@ -1,0 +1,375 @@
+@charset "utf-8";
+
+/* CSSリセット */
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #CCC;
+    color: #333;
+    font-size: 15px;
+    line-height: 2;
+}
+p,h1,h2,h3,h4,h5,h6 {
+    margin-top: 0;
+}
+
+img {
+    vertical-align: bottom;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+/*擬似クラスの設定*/
+
+a {
+    color: #3583aa;
+    text-decoration: none;
+}
+a:visited {
+    color: #788d98;
+}
+a:hover {
+    text-decoration: underline;
+}
+
+header {
+    width: 960px;
+    height: 100px;
+    margin: 0 auto;
+}
+
+.logo {
+    float: left;
+    margin-top: 50px;
+    /* ロゴの余白を作っておく*/
+}
+
+.global-nav {
+    float: right;
+    margin-top: 60px;
+    /* ロゴの方が上で*/
+}
+.global-nav li {
+    float: left;
+    /* 親がright */
+    margin: 0 20px;
+    font-size: 20px;
+    list-style: none;
+    font-family: 'Lato', sans-serif;
+}
+.global-nav li a {
+    color: #fff;
+}
+.global-nav li a:hover {
+    border-bottom: 2px solid #fff;
+    padding-bottom: 3px;
+    text-decoration: none;
+}
+#wrap {
+    clear: both;
+}
+.content {
+    width: 960px;
+    margin: 0 auto;
+}
+footer {
+    text-align: center;
+    color: #fff;
+    padding: 20px 0;
+    background-color: #663333;
+}
+footer small {
+    font-size: 12px;
+}
+
+/*index*/
+#index {
+    background-image: url(../images/bg-index-2.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: cover;
+}
+#index #wrap {
+    background-color: transparent;
+    margin-top: 0;
+    padding: 0;
+}
+#index h1 {
+    font-size: 100px;
+    line-height: 1;
+    color: #fff;
+    font-family: 'Lato', sans-serif;
+    margin-bottom: 50px;
+    border: none;
+}
+#index .content {
+    margin-top: 150px;
+}
+#index h1 {
+    font-size: 100px;
+    line-height: 1;
+    color: #fff;
+    font-family: 'Lato', sans-serif;
+    margin-bottom: 50px;
+}
+#index p {
+    font-size: 16px;
+    color: #fff;
+}
+.btn a {
+    background-color: #009cd3;
+    color: #fff;
+    font-size: 20px;
+    font-family: 'Lato', sans-serif;
+    width: 185px;
+    display: block;
+    text-align: center;
+    line-height: 50px;
+    margin-top: 20px;
+    border-radius: 5px;
+    border: 3px solid #009cd3;
+}
+.btn a:hover {
+    text-decoration: none;
+    background-color: #fff;
+    color: #009cd3;
+}
+#index footer {
+    width: 960px;
+    margin: 150px auto 0 auto;
+    text-align: left;
+    background-color: transparent;
+}
+
+/* About */
+#about {
+    background-image: url(../images/bg-about-2.png);
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-attachment: fixed;
+    background-size: 100% auto;
+}
+#wrap {
+    clear: both;
+    background-color: #fff;
+    margin-top: 220px;
+    padding: 35px 0;
+}
+.main-center {
+    width: 940px;
+    margin: 0 auto;
+}
+h1 {
+    font-family: 'Lato', sans-serif;
+    font-size: 36px;
+    border-bottom: 1px solid #ccc;
+}
+h2 {
+    font-family: 'Lato', sans-serif;
+    font-size: 24px;
+}
+.icon:before {
+    content: "";
+    padding-right: 10px;
+    border-left: 7px solid #CC9933;
+}
+#about .profile-txt {
+    width: 540px;
+    float: left;
+}
+#about .profile-image {
+    width: 30%;
+    height: 25%;
+    float: right;
+}
+#about .profile-txt span {
+    font-weight: bold;
+}
+.clearfix:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+section {
+    margin-bottom: 35px;
+}
+#about .career th{
+    width: 240px;
+    background-color: #f0f0f0;
+    padding: 12px 0;
+    border: 1px solid #ccc;
+}
+#about .career td {
+    width: 720px;
+    padding: 12px 0 12px 40px;
+    border: 1px solid #ccc;
+}
+table {
+    border-spacing: 0;
+    border-collapse: collapse;
+}
+
+/* portfolio */
+#portfolio {
+    background-image: url(../images/bg-portfolio-new.png);
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-attachment: fixed;
+    background-size: 100% auto;
+}
+#portfolio .btn-picture{
+    height: 250px;
+    width: 700px;
+}
+.main {
+    width: 700px;
+    margin: 0 10px;
+    float: left;
+}
+.sidebar {
+    width: 200px;
+    margin: 0 10px 0 30px;
+    float: right;
+    font-family: 'Lato', sans-serif;
+}
+.sidebar h2 {
+    margin-bottom: 10px;
+}
+.sidebar ul {
+    font-size: 16px;
+    margin-left: 20px;
+}
+.sidebar ul a {
+    color: #333;
+}
+#portfolio a img:hover {
+    opacity: 0.8;
+}
+/* Picture */
+#picture .pp {
+    height: 250px;
+}
+#picture .pp1,.pp2,.ppa,.ppb {
+    height: 285px;
+}
+#picture .ppc{
+    height:400px;
+}
+#picture .pp6,.pp7 {
+    height: 348px;
+}
+#picture .pp3,.pp4,.pp5  {
+    height: 278px;
+}
+#picture {
+    background-image: url(../images/bg-picture.png);
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-attachment: fixed;
+    background-size: 100% auto;
+}
+#picture .picture-list li{
+    float: left;
+    list-style: none;
+    margin: 0 20px 15px 0;
+}
+#picture .btn-video {
+    background-color:#CCCCFF;
+    color: #660066;
+    border: 1px solid #CCCCFF;
+    padding: 4px 5px 2px;
+    height: 30px;
+    width: 200px;
+    display: inline-block;
+    line-height: 30px;
+    text-align: center;
+    border-radius: 4px;
+    margin-top: 60px;
+    text-decoration: none;
+}
+/*video*/
+#video {
+    background-image: url(../images/bg-video2.png);
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-attachment: fixed;
+    background-size: 100% auto;
+}
+/* Contact */
+#contact {
+    background-image: url(../images/bg-contact2.png);
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-attachment: fixed;
+    background-size: 100% auto;
+}
+#contact .access table {
+    float: left;
+}
+#contact .access th,
+#contact .access td {
+    text-align: left;
+    vertical-align: top;
+    line-height: 2.5;
+}
+#contact .access td {
+    padding-left: 30px;
+}
+
+#contact .access iframe {
+    width: 460px;
+    float: right;
+}
+#contact .form {
+    background-color: #eaeaea;
+    padding: 30px 50px;
+}
+#contact .form dl dt {
+    width: 165px;
+    padding: 10px 0;
+    float: left;
+    clear: both;
+}
+#contact .form dl dd {
+    padding: 10px 0;
+}
+#contact .form .name,.email,.tel {
+    width: 240px;
+    height: 30px;
+}
+#contact .form .type {
+    width: 180px;
+    height: 30px;
+}
+#contact .form .message {
+    width: 660px;
+    height: 150px;
+}
+#contact .form .button {
+    background-color: #009cd3;
+    color: #fff;
+    font-size: 20px;
+    width: 120px;
+    display: block;
+    text-align: center;
+    line-height: 50px;
+    border-radius: 5px;
+    border: 3px solid #009cd3;
+    margin-left: 165px;
+}
+#contact .form .button:hover {
+    background-color: #fff;
+    color: #009cd3;
+    cursor: pointer;
+}
+#contact .form .required:after {
+    content: "※";
+    color: #ff0000;
+}
+#contact .form .attention {
+    margin: 20px 0 0 165px;
+}
