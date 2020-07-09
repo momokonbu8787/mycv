@@ -420,6 +420,5 @@ table {
         max-width: 100%;
     }
     #portfolio {
-        background-image: url(bg-portfolio-res.png);
+        background-image: url(../images/bg-portfolio-new2.png);
     }
-}
