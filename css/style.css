@@ -375,7 +375,7 @@ table {
 }
 /**  レスポンシブデザイン　**/
 
-@media screen and (max-width:480px) {
+@media screen and (max-width:375px) {
     body {
         font-size: 3.5vw;
     }
