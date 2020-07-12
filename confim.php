@@ -55,35 +55,18 @@
                     <section>
                         <h2 class="icon">Contact Form</h2>
                         <div class="form">
-                            <form action="./confirm.php" method="post">
-                            <dl>
-                                <dt><span class="required">お名前</span></dt>
-                                <dd><input type="text" name="name" class="name" required></dd>
-                                <dt><span class="required">メールアドレス</span></dt>
-                                <dd><input type="text" name="email" class="email" required></dd>
-                                <dt>お電話番号</dt>
-                                <dd><input type="tel" name="tel" class="tel"></dd>
-                                <dt>お問い合わせ種別</dt>
-                                <dd>
-                                    <select name="type" class="type">
-                                        <option value="画像作成のご依頼">画像作成のご依頼</option>
-                                        <option value="雇用について">雇用について</option>
-                                        <option value="その他のお問い合わせ">その他のお問い合わせ</option>
-                                    </select>
-                                </dd>
-                                <dt>ご希望のご連絡方法</dt>
-                                <dd><input name="contact" value="Eメール" type="radio">Eメール
-                                    <input name="contact" value="お電話" type="radio">お電話
-                                </dd>
-                                <dt>メッセージ</dt>
-                                <dd><textarea name="message" class="message"></textarea></dd>
-                            </dl>
-                            </form>
-                            <button type="submit" class="button">送信</button>
-                            <div class="attention">
-                                <p>※「<span class="required"></span>」が付いている項目は必須項目です。<br>
-                                   ※メッセージ送信後、24時間以内に返信いたします。</p>
-                            </div>
+                            <?php
+                              mb_language("Japanese");
+                              mb_internal_encoding("UTF-8");
+                              $name = $_POST['name'];
+                              $email = $_POST['email'];
+                              $tel = $_POST['tel'];
+                              if(mb_send_mail($name, $email)){
+                                echo "メールを送信しました";
+                              } else {
+                                echo "メールの送信に失敗しました";
+                              };
+                            ?>
                         </div>
                     </section>
                 </div>
