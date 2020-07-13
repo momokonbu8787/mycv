@@ -525,9 +525,19 @@ table {
         float: left;
     }
     /* Picture*/
-    #picture .picture-list li {
+    #picture .main {
+        padding-right: 10px;
+    }
+    #picture #photoshop .picture-list li{
+        float: none;
         margin: 10px 10px 10px 10px;
     }
+    #picture .pps {
+        margin-right: 10px;
+    }
+
+
+    /*
     #picture .pps {
         height: 210px;
     }
@@ -536,6 +546,6 @@ table {
     }
     #picture .pps3 {
         height: 362px;
-    }
+    }*/
 
 }
