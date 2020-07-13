@@ -445,4 +445,27 @@ table {
         padding: 30px 10% 10px;
         background-color: #f7f6f4;
     }
+    /* index */
+
+    #index {
+        background-image: url(../images/bg-index-sp.png);
+    }
+    #index .content {
+        float: none;
+        width: auto;
+        margin: 100px 5%;
+    }
+    #index h1 {
+        font-size: 15vw;
+        text-align: center;
+    }
+    #index .btn a {
+        margin: 0 auto;
+        text-align: center;
+        
+    }
+    #index footer {
+        width: auto;
+        text-align: center;
+    }
 }
