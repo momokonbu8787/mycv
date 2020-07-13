@@ -402,6 +402,9 @@ table {
     h2 {
         font-size: 6vw;
     }
+    p {
+        font-size: 3.8vw;
+    }
     header {
         width: auto;
         margin: 0 5%;
@@ -440,7 +443,7 @@ table {
         max-width: 100%;
     }
     #portfolio {
-        background-image: url(../images/bg-portfolio-res2.png);
+        background-image: url(../images/bg-portfolio-res3.png);
     }
     .sidebar {
         width: auto;
