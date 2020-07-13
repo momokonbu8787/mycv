@@ -450,6 +450,9 @@ table {
         background-color: #f7f6f4;
     }
     /* About */
+    #about {
+        background-image: url(../images/bg-cabout-res.png);
+    }
     #about .content {
         padding-bottom: 15px;
     }
