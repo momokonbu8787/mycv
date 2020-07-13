@@ -445,6 +445,27 @@ table {
         padding: 30px 10% 10px;
         background-color: #f7f6f4;
     }
+    /* About */
+
+    .main-center {
+        float: none;
+        width: auto;
+        margin: 0 5%;
+    }
+    #about .profile-txt {
+        width: auto;
+        float: none;
+    }
+    #about .profile-image {
+        display: none;
+    }
+    #about .profile-image-two {
+        width: 100%;
+        display: initial;
+    } 
+    #about .career {
+        margin-bottom: 0;
+    }
     /* index */
 
     #index {
@@ -468,4 +489,44 @@ table {
         width: auto;
         text-align: center;
     }
+    /* Video */
+    
+    #video {
+        background-image: url(../images/bg-video.png);
+    }
+    #video .content {
+        margin-bottom: 0;
+    }
+    .v-video {
+        position: relative;
+        padding-bottom: 56.25%;
+        height: 0;
+        overflow: hidden;
+    }
+    .v-video iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+    /* Contact*/
+    #contact {
+        background-image: url(../images/bg-contact-res.png);
+    }
+    #contact .form .message{
+        width: 100%;
+        margin-right: 55px;
+    }
+    #contact .form .attention {
+        margin: 30px auto 0 auto;
+    }
+    #contact iframe {
+        float: left;
+    }
+    /* Photograph*/
+    #photograph .photograph-list li {
+        margin: 10px 10px 10px 10px;
+    }
+
 }
