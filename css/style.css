@@ -395,6 +395,7 @@ table {
     body {
         font-size: 3.5vw;
     }
+    
     h1 {
         font-size: 7.2vw;
     }
@@ -501,7 +502,7 @@ table {
     /* Video */
     
     #video {
-        background-image: url(../images/bg-video.png);
+        background-image: url(../images/bg-video-res.jpeg);
         background-size: cover;
     }
     #video .content {
@@ -523,7 +524,6 @@ table {
     /* Contact*/
     #contact {
         background-image: url(../images/bg-contact-res.png);
-        background-attachment: initial;
     }
     #contact .content {
         padding-bottom: 15px;
@@ -531,17 +531,16 @@ table {
     #contact .form {
         padding: 30px 30px;
     }
-    #contact .form .name {
+
+    #contact .form input {
         width: 100%;
-        margin-right: 55px;
+        /*padding-right: 155px;*/
     }
-    #contact input {
-        width: 100%;
-        margin-right: 55px;
+    #contact .form dd .radio-btn {
+        width: 10% ;
     }
     #contact .form .message{
         width: 100%;
-        margin-right: 55px;
     }
     #contact .form .attention {
         margin: 30px auto 0 auto;
@@ -550,6 +549,9 @@ table {
         margin: 0 auto ;
     }
     /* Picture*/
+    #picture {
+        background-image: url(../images/bg-picture-res.jpeg);
+    }
     #picture .picture-list li{
         float: none;
         margin: 10px auto;
@@ -557,7 +559,12 @@ table {
     #picture  .pps, .ppf{
         max-width: 100%;
         display: inline-block;
-        height: 300px;
+        height: auto;
+    }
+    #picture  .pps1, .ppf1{
+        width: 100%;
+        display: inline-block;
+        height: auto;
     }
     /* Modeling */
     #modeling {
