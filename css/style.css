@@ -391,7 +391,7 @@ table {
 }
 /**  レスポンシブデザイン　**/
 
-@media screen and (max-width:375px) {
+@media screen and (max-width:420px) {
     body {
         font-size: 3.5vw;
     }
@@ -527,6 +527,15 @@ table {
     /* Picture*/
     #picture .picture-list li {
         margin: 10px 10px 10px 10px;
+    }
+    #picture .pps {
+        height: 210px;
+    }
+    #picture .pps2 {
+        height: 182px;
+    }
+    #picture .pps3 {
+        height: 362px;
     }
 
 }
