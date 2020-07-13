@@ -337,7 +337,7 @@ table {
 #contact .form dl dd {
     padding: 10px 0;
 }
-#contact .form .name,.email,.tel {
+#contact .form .name, .email, .tel {
     width: 240px;
     height: 30px;
 }
@@ -435,6 +435,9 @@ table {
     h2 img {
         max-width: 100%;
     }
+    iframe {
+        max-width: 100%;
+    }
     #portfolio {
         background-image: url(../images/bg-portfolio-res2.png);
     }
@@ -446,7 +449,9 @@ table {
         background-color: #f7f6f4;
     }
     /* About */
-
+    #about,#contact #wrap {
+        padding-bottom: 15px;
+    }
     .main-center {
         float: none;
         width: auto;
@@ -466,6 +471,10 @@ table {
     #about .career {
         margin-bottom: 0;
     }
+    #about .career td {
+        padding: 12px;
+    }
+
     /* index */
 
     #index {
@@ -493,6 +502,7 @@ table {
     
     #video {
         background-image: url(../images/bg-video.png);
+        background-size: cover;
     }
     #video .content {
         margin-bottom: 0;
@@ -513,6 +523,18 @@ table {
     /* Contact*/
     #contact {
         background-image: url(../images/bg-contact-res.png);
+        background-attachment: initial;
+    }
+    #contact .form {
+        padding: 30px 30px;
+    }
+    #contact .form .name {
+        width: 100%;
+        margin-right: 55px;
+    }
+    #contact input {
+        width: 100%;
+        margin-right: 55px;
     }
     #contact .form .message{
         width: 100%;
@@ -521,22 +543,19 @@ table {
     #contact .form .attention {
         margin: 30px auto 0 auto;
     }
-    #contact iframe {
-        float: left;
+    #contact .form .button {
+        margin: 0 auto ;
     }
     /* Picture*/
-    #picture .main {
-        padding-right: 10px;
-    }
-    #picture #photoshop .picture-list li{
+    #picture .picture-list li{
         float: none;
-        margin: 10px 10px 10px 10px;
+        margin: 10px auto;
     }
-    #picture .pps {
-        margin-right: 10px;
+    #picture  .pps, .ppf{
+        max-width: 100%;
+        display: inline-block;
+        height: 300px;
     }
-
-
     /*
     #picture .pps {
         height: 210px;
