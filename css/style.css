@@ -391,7 +391,7 @@ table {
 }
 /**  レスポンシブデザイン　**/
 
-@media screen and (max-width:420px) {
+@media screen and (max-width:380px) {
     body {
         font-size: 3.5vw;
     }
@@ -449,7 +449,7 @@ table {
         background-color: #f7f6f4;
     }
     /* About */
-    #about,#contact #wrap {
+    #about .content {
         padding-bottom: 15px;
     }
     .main-center {
@@ -525,6 +525,9 @@ table {
         background-image: url(../images/bg-contact-res.png);
         background-attachment: initial;
     }
+    #contact .content {
+        padding-bottom: 15px;
+    }
     #contact .form {
         padding: 30px 30px;
     }
@@ -556,15 +559,8 @@ table {
         display: inline-block;
         height: 300px;
     }
-    /*
-    #picture .pps {
-        height: 210px;
+    /* Modeling */
+    #modeling {
+        background-image: url(../images/bg-modeling-res.png);
     }
-    #picture .pps2 {
-        height: 182px;
-    }
-    #picture .pps3 {
-        height: 362px;
-    }*/
-
 }
